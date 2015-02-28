@@ -4,6 +4,8 @@ This library will throw a party in your browser bar.
 
 It will draw a new character as your favicon every second, so you can show a text message.
 
+![Favicon Slider in action (GIF)](http://g.recordit.co/fKsPkebAXh.gif)
+
 Usage
 ======
 
