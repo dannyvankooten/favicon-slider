@@ -26,14 +26,14 @@ Configuration
 
 Favicon Slider comes with various options, which should speak for themselves.
 
-`
+```js
 faviconSlider.setSpeed(1000);
 faviconSlider.setText("YourText");
 faviconSlider.setBackgroundColor("#000");
 faviconSlider.setTextColor("#fff");
 faviconSlider.stop();
 faviconSlider.start();
-`
+```
 
 License
 ========
