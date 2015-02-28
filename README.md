@@ -35,6 +35,8 @@ faviconSlider.stop();
 faviconSlider.start();
 ```
 
+A fully customised example utilising all the configuration options is given in `example.html`.
+
 License
 ========
 
