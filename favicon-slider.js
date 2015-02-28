@@ -12,7 +12,8 @@
 				favicon = document.head.querySelector('link[rel="shortcut icon"], link[rel="icon"]'),
 				speed = 1000,
 				textColor = "#000",
-				backgroundColor = "#fff";
+				backgroundColor = "#fff",
+				running = false;
 
 			function createFavicon() {
 				if( ! favicon ) {
@@ -71,12 +72,19 @@
 
 			function stop() {
 				window.clearInterval(interval);
+				running = false;
 			}
 
 			function start() {
+
+				// don't start a second interval if already running
+				if( running ) {
+					return;
+				}
+
 				drawNextChar();
 				interval = window.setInterval(drawNextChar, speed);
-				console.log("Starting. Interval ID: " + interval );
+				running = true;
 			}
 
 			function setText(newText){
